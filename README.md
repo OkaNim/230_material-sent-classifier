@@ -1,6 +1,12 @@
 材料論文における試料調製や物性測定、それらに対する結果・考察、また、それまでの既知事実などの文を分類します。<br>
 <br>
 <br>
+## Requirements
+Python > 3.8.5<br>
+PyTorch (Please get the optical version from the web page(https://pytorch.org/))<br>
+The Python libraries in requrements.txt<br>
+<br>
+<br>
 ## How to use
 Please create the script such as 230_test.py in /src and run there.<br>
 ```
