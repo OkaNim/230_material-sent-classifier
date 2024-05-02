@@ -2,7 +2,7 @@
 <br>
 <br>
 ## How to use
-Please create the script such as 229_test.py in /src and run it after moving to /src.<br>
+Please create the script such as 230_test.py in /src and run there.<br>
 ```
 python 230_test.py
 ```
