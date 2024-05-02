@@ -42,21 +42,31 @@ print("\n\nY_preds\n\n", Y_preds, "\n\n")<br>
 -------------------<br>
 <br>
 <br>
-The BIOES tags are outputted for every token as follow:<br>
-refsign_tags<br>
- ['O', 'B', 'I', 'I', 'I', 'I', 'I', 'I', 'I', 'I', 'I', 'E', 'O', 'S', 'O', 'O', 'B', 'E', 'O', 'O', 'O', 'O', 'O', 'O']<br>
+The results are outputted as follow:<br>
 <br>
-The abbreviations for referring signs will be also outputted as follow:<br>
-refsign_abbs<br>
- {'BBCP': 'bottlebrush block copolymers'}<br>
+results<br>
 <br>
-Polymer name recogonition is also included in 229_test.py. <br>
-The BIOES tags are outputted for every token as follow:<br>
-polymer_tags<br>
- ['O', 'B', 'I', 'I', 'I', 'E', 'O', 'S', 'O', 'O', 'O', 'O', 'O', 'S', 'O', 'O', 'O', 'S', 'O', 'O', 'O', 'O', 'O', 'O']<br>
+ {'text': 'Results and Discussion', 'label_pred': 'title'}<br>
+<br>
+ {'text': 'We propose the method to investigate the effect.', 'label_pred': 'aim'}<br>
+<br>
+ {'text': 'All samples were synthesized using the catalysts in water.', 'label_pred': 'preparation'}<br>
+<br>
+ {'text': 'The chemical structure was confirmed by 1H-NMR.', 'label_pred': 'measurement'}<br>
+<br>
+ {'text': 'The results are shown in Fig 1 and Table 1.', 'label_pred': 'showing'}<br>
+<br>
+ {'text': 'The transition temperature was 373 K.', 'label_pred': 'result'}<br>
+<br>
+ {'text': 'This equation can be applied for the behaviors.', 'label_pred': 'knowledge'}<br>
+<br>
+ {'text': 'This was due to that the side chain group could not rotate.', 'label_pred': 'consideration'}<br>
+<br>
+ {'text': 'where the temperature is reached above 373 K', 'label_pred': 'condition'}<br>
 <br>
 <br>
-The tokenized text (toks) and the POS tags (pos_tags) are necessary.<br>
-The POS tags should be obtained using Stanford Core NLP (https://stanfordnlp.github.io/CoreNLP/).<br>
+Y_preds<br>
+<br>
+ [1, 2, 3, 4, 5, 6, 7, 8, 9]<br>
 <br>
 <br>
