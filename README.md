@@ -2,8 +2,8 @@
 <br>
 <br>
 ## Requirements
-Python > 3.8.5<br>
-PyTorch (Please get the optical version from the web page(https://pytorch.org/))<br>
+Python >= 3.8.5<br>
+PyTorch (Please get the optical version from the web page (https://pytorch.org/))<br>
 The Python libraries in requrements.txt<br>
 <br>
 <br>
