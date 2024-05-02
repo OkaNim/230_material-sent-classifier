@@ -4,29 +4,41 @@
 ## How to use
 Please create the script such as 229_test.py in /src and run it after moving to /src.<br>
 ```
-python 229_test.py
+python 230_test.py
 ```
 <br>
------ 229_test.py -----<br>
-import src_039_recognize_polymer_name_240426 as src_039<br>
-import src_229_recognize_polymer_refsign_240426 as src_229<br>
+----- 230_test.py -----<br>
+<br>
+import src_186_BERT_SC_240502 as src_186<br>
 <br>
 <br>
-toks = ["in", "polystyrene-block-poly", '(', "ethylene", "oxide", ')', '(', "PS-b-PEO", ')', "bottlebrush", "block", "copolymers", '(', "BBCP", ')', "upon", "The", "BBCPs", "are", "soluble", "in", "organic", "solvents", "."]<br>
+sents = [<br>
+            "Results and Discussion",<br>
+            "We propose the method to investigate the effect.",<br>
+            "All samples were synthesized using the catalysts in water.",<br>
+            "The chemical structure was confirmed by 1H-NMR.",<br>
+            "The results are shown in Fig 1 and Table 1.",<br>
+            "The transition temperature was 373 K.",<br>
+            "This equation can be applied for the behaviors.",<br>
+            "This was due to that the side chain group could not rotate.",<br>
+            "where the temperature is reached above 373 K",<br>
+        ]<br>
 <br>
-pos_tags = ["IN", "NN", "-LRB-", "NN", "NN", "-RRB-", "-LRB-", "NN", "-RRB-", "NN", "NN", "NNS", "-LRB-", "NN", "-RRB-", "IN", "DT", "NNS", "VBP", "JJ", "IN", "JJ", "NNS", "."]<br>
-"""It is necessary to obtain pos_tags in advance using Stanford Core NLP."""<br>
+<br>
+model_path_for_infer = "./230_file/ver=136_epoch=19_val_loss=0.873_SC_understand_220318"<br>
+GPU_ID = "cpu"    # CPU:"cpu", GPU_0:[0], GPU_1:[1], , ,.<br>
+pret_model_path = # Write the path for the pre-trained model such as matscibert.<br>
+<br>
+results, Y_preds = src_186.infer(sents, model_path_for_infer, GPU_ID, pret_model_path, screen_print=True)<br>
 <br>
 <br>
-refsign_tags, refsign_abbs = src_229.main(toks, pos_tags)<br>
+print("\n\nresults",)<br>
+for x in results:<br>
+    print("\n", x)<br>
 <br>
-polymer_tags = src_039.main(toks)<br>
 <br>
-<br>
-print("\nrefsign_tags\n", refsign_tags)<br>
-print("\nrefsign_abbs\n", refsign_abbs)<br>
-print("\npolymer_tags\n", polymer_tags)<br>
-print("\n\n")<br>
+print("\n\nY_preds\n\n", Y_preds, "\n\n")<br>
+"""Y_preds are the label-ids for pytorch: e.g. title:0, aim:2, preparation:3."""<br>
 -------------------<br>
 <br>
 <br>
