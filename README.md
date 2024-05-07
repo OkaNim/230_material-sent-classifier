@@ -50,7 +50,6 @@ print("\n\nY_preds\n\n", Y_preds)<br>
 <br>
 The results are outputted as follow:<br>
 <br>
-```
 results<br>
 <br>
  {'text': 'Results and Discussion', 'label_pred': 'title'}<br>
@@ -75,7 +74,9 @@ results<br>
 Y_preds<br>
 <br>
  [1, 2, 3, 4, 5, 6, 7, 8, 9]<br>
+<br>
+<br>
 ```
-<br>
-<br>
-There are 10 labels (the 9 labels described above and 'other').<br>
+There are 10 labels (the 9 labels described above and 'other').
+```
+Abc
