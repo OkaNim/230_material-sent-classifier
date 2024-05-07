@@ -74,7 +74,7 @@ Y_preds<br>
  [1, 2, 3, 4, 5, 6, 7, 8, 9]<br>
 <br>
 <br>
-The max tokens are 128.<br>
+The max length for a sentence is 128 tokens.<br>
 It is necessary to get the pre-trained model such as matscibert from the Hugging Face's web page (https://huggingface.co/m3rg-iitd/matscibert).<br>
 <br>
 <br>
