@@ -74,6 +74,7 @@ Y_preds<br>
  [1, 2, 3, 4, 5, 6, 7, 8, 9]<br>
 <br>
 <br>
+The max tokens are 128.<br>
 It is necessary to get the pre-trained model such as matscibert from the Hugging Face's web page (https://huggingface.co/m3rg-iitd/matscibert).<br>
 <br>
 <br>
