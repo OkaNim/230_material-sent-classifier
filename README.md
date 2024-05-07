@@ -8,6 +8,7 @@ The libraries in requrements.txt.<br>
 <br>
 ## How to use
 It is necessary in advance to get the pre-trained model for BERT such as matscibert from the Hugging Face's web page (https://huggingface.co/m3rg-iitd/matscibert).<br>
+<br>
 After downloading the source codes, please create the script such as 230_test.py in /src and run.<br>
 ```
 python 230_test.py
