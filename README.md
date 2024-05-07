@@ -3,7 +3,7 @@ Sentences for sample preparations, mesurements, their results, and so on in mate
 <br>
 ## Requirements
 PyTorch (https://pytorch.org/)<br>
-The Python libraries in requrements.txt in /src.<br>
+The Python libraries in requrements.txt.<br>
 <br>
 <br>
 ## How to use
