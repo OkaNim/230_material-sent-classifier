@@ -2,7 +2,6 @@ Sentences for sample preparations, mesurements, their results, and so on in mate
 <br>
 <br>
 ## Requirements
-Python >= 3.8.5<br>
 PyTorch (https://pytorch.org/), user ortical version<br>
 The Python libraries in requrements.txt in /src.<br>
 <br>
