@@ -7,6 +7,7 @@ The libraries in requrements.txt.<br>
 <br>
 <br>
 ## How to use
+It is necessary in advance to get the pre-trained model for BERT such as matscibert from the Hugging Face's web page (https://huggingface.co/m3rg-iitd/matscibert).<br>
 After downloading the source codes, please create the script such as 230_test.py in /src and run.<br>
 ```
 python 230_test.py
@@ -28,6 +29,7 @@ sents = [<br>
             "This was due to that the side chain group could not rotate.",<br>
             "where the temperature is reached above 373 K",<br>
         ]<br>
+""" The max length for a sentence is 128 tokens. """<br>
 <br>
 <br>
 model_path_for_infer = "./230_file/ver=136_epoch=19_val_loss=0.873_SC_understand_220318"<br>
@@ -72,9 +74,3 @@ results<br>
 Y_preds<br>
 <br>
  [1, 2, 3, 4, 5, 6, 7, 8, 9]<br>
-<br>
-<br>
-The max length for a sentence is 128 tokens.<br>
-It is necessary to get the pre-trained model such as matscibert from the Hugging Face's web page (https://huggingface.co/m3rg-iitd/matscibert).<br>
-<br>
-<br>
