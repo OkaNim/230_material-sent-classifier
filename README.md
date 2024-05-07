@@ -1,14 +1,14 @@
-材料論文における試料調製や物性測定、それらに対する結果・考察、また、それまでの既知事実などの文を分類します。<br>
+Sentences for sample preparations, mesurements, their results, and so on in material science's documents can be classified.<br>
 <br>
 <br>
 ## Requirements
 Python >= 3.8.5<br>
-PyTorch (https://pytorch.org/)<br>
+PyTorch (https://pytorch.org/), user ortical version<br>
 The Python libraries in requrements.txt in /src.<br>
 <br>
 <br>
 ## How to use
-Please create the script such as 230_test.py in /src and run there.<br>
+Please create the script such as 230_test.py in /src and run.<br>
 ```
 python 230_test.py
 ```
@@ -32,22 +32,21 @@ sents = [<br>
 <br>
 <br>
 model_path_for_infer = "./230_file/ver=136_epoch=19_val_loss=0.873_SC_understand_220318"<br>
-GPU_ID = "cpu"    # CPU:"cpu", GPU_0:[0], GPU_1:[1], , ,.<br>
-pret_model_path = # Write the path for the pre-trained model such as matscibert.<br>
+device = "cpu"    # CPU:"cpu", GPU_0:[0], GPU_1:[1], , , .<br>
+pret_model_path = "../../180_nlp-models/BERT/matscibert"<br>
 <br>
-results, Y_preds = src_186.infer(sents, model_path_for_infer, GPU_ID, pret_model_path, screen_print=True)<br>
+results, Y_preds = src_186.infer(sents, model_path_for_infer, device, pret_model_path, screen_print=True)<br>
 <br>
 <br>
 print("\n\nresults",)<br>
-for x in results:<br>
-    print("\n", x)<br>
+for x in results: print("\n", x)<br>
 <br>
-<br>
-print("\n\nY_preds\n\n", Y_preds, "\n\n")<br>
-"""Y_preds are the label-ids: title:0, aim:2, preparation:3, , , ."""<br>
+print("\n\nY_preds\n\n", Y_preds)<br>
+""" Y_preds are the label-ids: other:0, title:1, aim:2, preparation:3, , , . """<br>
 -------------------<br>
 <br>
 <br>
+There are 10 labels (the 9 labels as described below and 'other').<br>
 The results are outputted as follow:<br>
 <br>
 results<br>
