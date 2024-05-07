@@ -7,7 +7,7 @@ The libraries in requrements.txt.<br>
 <br>
 <br>
 ## How to use
-Please create the script such as 230_test.py in /src and run.<br>
+After downloading the source codes, please create the script such as 230_test.py in /src and run.<br>
 ```
 python 230_test.py
 ```
