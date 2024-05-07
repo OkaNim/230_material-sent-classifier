@@ -47,7 +47,7 @@ print("\n\nY_preds\n\n", Y_preds)<br>
 -------------------<br>
 <br>
 <br>
-There are 10 labels (the 9 labels as described below and 'other').<br>
+There are 10 labels (the 9 labels described below and 'other').<br>
 The results are outputted as follow:<br>
 <br>
 results<br>
