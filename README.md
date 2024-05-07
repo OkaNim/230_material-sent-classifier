@@ -44,7 +44,7 @@ for x in results:<br>
 <br>
 <br>
 print("\n\nY_preds\n\n", Y_preds, "\n\n")<br>
-"""Y_preds are the label-ids for pytorch: e.g. title:0, aim:2, preparation:3."""<br>
+"""Y_preds are the label-ids: title:0, aim:2, preparation:3, , , ."""<br>
 -------------------<br>
 <br>
 <br>
