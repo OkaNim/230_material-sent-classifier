@@ -1,0 +1,32 @@
+{
+    "label2id": {
+        "other": 0,
+        "title": 1,
+        "aim": 2,
+        "preparation": 3,
+        "measurement": 4,
+        "showing": 5,
+        "result": 6,
+        "knowledge": 7,
+        "consideration": 8,
+        "condition": 9,
+        "analysis": 10,
+        "definition": 11,
+        "equation": 12
+    },
+    "id2label": {
+        "0": "other",
+        "1": "title",
+        "2": "aim",
+        "3": "preparation",
+        "4": "measurement",
+        "5": "showing",
+        "6": "result",
+        "7": "knowledge",
+        "8": "consideration",
+        "9": "condition",
+        "10": "analysis",
+        "11": "definition",
+        "12": "equation"
+    }
+}
